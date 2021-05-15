@@ -1,0 +1,77 @@
+/* Картинка мастабируется по отношению к родительскому элементу */
+/*.reviews */
+.listTrucks {
+    /*position: relative;*/
+}
+
+/* Кнопки вперед и назад */
+.list_services .nextTrucks,
+.list_services .previousTrucks,
+.slider-dots_itemTrucks {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    margin: 0 2px;
+    color: rgba(255, 255, 255, 0.5);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    border-radius: 5px;
+    transition: 0.6s ease;
+}
+
+.list_services .nextTrucks:hover,
+.list_services .previousTrucks:hover{
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Кружочки */
+.slider-dotsTrucks {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    margin-bottom: 16px;
+    display: table;
+    border-spacing: 16px 0px;
+    margin-left: -16px;
+}
+.slider-dots_itemTrucks {
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_itemTrucks:hover {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Анимация слайдов */
+.list_services .listTrucks {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

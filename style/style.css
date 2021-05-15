@@ -1,0 +1,218 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/font.jpg") center center no-repeat fixed;
+    background-size: cover;
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+
+}
+.wrapper {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 78px)) 1fr;
+    grid-column-gap: 20px;
+}
+header {
+    grid-column: 2/14;
+    height: 100px;
+    margin: 40px 10px 20px 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+nav {
+    grid-column: 2/14;
+    height: 50px;
+    margin: 0 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
+.breadCrumbs {
+    grid-column: 2/14;
+    height: 40px;
+    margin: 0 10px;
+}
+.filter {
+    grid-column: 2/5;
+    height: 596px;
+    margin: 50px 0 0 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
+main {
+    grid-column: 5/14;
+    height: 1758px;
+    margin: 0 10px 0 5px;
+    position: relative;
+}
+main h1 {
+    color: rgba(255, 255, 255, 0.9);
+}
+.sorting_element {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 268px;
+    height: 35px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.8);
+}
+.sorting_element select {
+    margin-left: 10px;
+    width: 207px;
+    height: 35px;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.listTrucks {
+    position: absolute;
+    top: 101px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 200px);
+    grid-gap: 16px;
+    height: 1280px;
+    /*border: red 2px solid;*/
+}
+
+.truck_elem {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.truck_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 16px;
+    width: 224px;
+    height: 168px;
+    border-radius: 5px;
+    background-size: cover !important;
+}
+/*.dir_elem span {*/
+/*    position: absolute;*/
+/*    width: 78px;*/
+/*    height: 20px;*/
+/*    bottom: 25px;*/
+/*    left: 40px;*/
+/*}*/
+
+/*.dir_elem span button {*/
+/*    font-family: 'Lato', sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: 600;*/
+/*    font-size: 12px;*/
+/*    line-height: 20px;*/
+/*    letter-spacing: 0.02em;*/
+/*    text-transform: uppercase;*/
+/*    color: rgba(0, 0, 0, 0.5);*/
+/*    border: none;*/
+/*    background-color: white;*/
+/*}*/
+
+/*.dir_elem span button:hover {*/
+/*    color: #DEC377;*/
+/*}*/
+
+.itemTitle {
+    position: absolute;
+    top: 16px;
+    left: 256px;
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.item_description {
+    position: absolute;
+    top: 42px;
+    left: 256px;
+    width: 575px;
+    max-height: 113px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.5);
+}
+.truck_elem .price {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    width: 63px;
+    height: 19px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: unset;
+}
+.year {
+    position: absolute;
+    bottom: 16px;
+    left: 256px;
+    width: 51px;
+    height: 24px;
+}
+.mileage {
+    position: absolute;
+    bottom: 16px;
+    left: 323px;
+    width: 78px;
+    height: 24px;
+}
+.axle_configuration {
+    position: absolute;
+    bottom: 16px;
+    left: 417px;
+    width: 33px;
+    height: 24px;
+}
+.year, .mileage, .axle_configuration, .price {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: rgb(255, 255, 255);
+    background-color: #c4c4c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    grid-column: 2/14;
+    height: 243px;
+    margin: 23px 8px 1px 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
